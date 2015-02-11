@@ -33,7 +33,6 @@ var fixPage = function () {
 // __addBodyChangeListener(document, onBodyChange)__.
 // Whenever the DOM changes in the document, onBodyChange will be called.
 var addBodyChangeListener = function (document, onBodyChange) {
-  // select the target node
   var body = document.querySelector('body'),
       observer = new MutationObserver(function(mutations) {
         onBodyChange(mutations[0].type);
