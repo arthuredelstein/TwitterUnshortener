@@ -41,6 +41,8 @@ var addBodyChangeListener = function (document, onBodyChange) {
   return function () { observer.disconnect(); };
 };
 
+### Main script
+
 // Listen for changes to the DOM (such as added tweets) and respond
 // by running fixPage().
 addBodyChangeListener(document, fixPage);
